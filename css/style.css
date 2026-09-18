@@ -684,3 +684,11 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   .media-wipe img, .media-wipe::after, [data-reveal], .btn-rollover span span, .btn-magnetic::before { transition: none !important; }
 }
 
+
+/* tablet + mobile: keep the approach words and the stats close together
+   (the two stacked halves each carried 90px of padding, which left a big gap) */
+@media (max-width: 950px) {
+  .h-panel--approach .h-panel--values { padding: 84px var(--gutter) 28px; }
+  .h-panel--approach .h-panel--values .values__intro { margin-bottom: 28px; }
+  .h-panel--approach .h-panel--stats { padding: 28px var(--gutter) 64px; gap: 24px; }
+}
