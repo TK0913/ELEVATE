@@ -79,13 +79,17 @@
   function initMobileMenu() {
     var btn = document.getElementById("menuBtn");
     var menu = document.getElementById("mobileMenu");
+    var closeBtn = document.getElementById("menuClose");
     if (!btn || !menu) return;
-    function close() { menu.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); }
+    function close() { menu.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); btn.focus({ preventScroll: true }); }
     btn.addEventListener("click", function () {
       var open = menu.classList.toggle("is-open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open && closeBtn) closeBtn.focus({ preventScroll: true });
     });
-    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", close); });
+    if (closeBtn) closeBtn.addEventListener("click", close);
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menu.classList.contains("is-open")) close(); });
+    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { menu.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); }); });
   }
 
   /* ---------------- contact form ----------------
