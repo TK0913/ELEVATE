@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elevate | Architecture &amp; Interior Design Studio Dubai</title>
+<meta name="description" content="Dubai architecture and interior design studio building homes, offices and hospitality spaces people actually want to be in. See the work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css?v=36">
+</head>
+<body>
+
+<!-- preloader -->
+<div class="preloader" id="preloader">
+  <img class="preloader__logo" src="assets/elevate-logo.png" alt="Elevate" width="1200" height="254">
+  <div class="preloader__pct" id="preloaderPct">0%</div>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <a href="#top" class="header__logo" aria-label="Elevate — back to top"><img src="assets/elevate-logo.png" alt="Elevate" width="1200" height="254"></a>
+
+  <button class="header__menu-btn nav-glass" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+    <span>Menu</span>
+    <span class="header__menu-btn-icon"><i></i><i></i></span>
+  </button>
+
+  <nav class="rail" aria-label="Primary">
+    <ul class="nav-glass">
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb" id="breadcrumb">Home</div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#studio">Studio</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="mobile-menu__foot">
+    <span>hello@elevatestudio.ae</span>
+    <span>Dubai, UAE</span>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ================= THE STORY =================
+       One continuous horizontally-scrolling filmstrip on desktop
+       (pinned; vertical scroll input drives horizontal x). Falls back to
+       a normal vertical stack under 950px. -->
+  <div class="story" id="story">
+    <div class="story__track" id="storyTrack">
+
+      <!-- HERO -->
+      <section class="h-panel h-panel--hero" data-nav-theme="light" id="top" data-label="Home">
+        <div class="hero__content">
+          <span class="eyebrow-script" aria-hidden="true">Welcome</span>
+          <h1 class="hero__title" data-split-lines>
+            <span class="line line--serif">Spaces worth</span>
+            <span class="line line--serif">the <em>address.</em></span>
+          </h1>
+          <div class="hero__ctas" data-reveal="up">
+            <a href="#contact" class="btn-rollover hero__cta-primary"><span><span>Start a Project</span><span>Start a Project</span></span></a>
+            <a href="#work" class="link-underline">See the Work</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="media-wipe hover-zoom" data-wipe="up">
+            <img src="https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?auto=format&fit=crop&w=1600&q=80" alt="Villa exterior design by Elevate, Emirates Hills, Dubai">
+          </div>
+        </div>
+        <p class="hero__note" data-reveal="up">
+          Architecture &amp; interior design, Dubai — homes, offices and
+          hospitality spaces people actually want to be in.
+        </p>
+      </section>
+
+      <!-- FULL BLEED IMAGE -->
+      <section class="h-panel h-panel--bleed" data-nav-theme="light" data-label="Home">
+        <div class="media-wipe hover-zoom" data-wipe="left">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1800&q=80" alt="Villa exterior with timber cladding, Elevate architecture, Dubai">
+        </div>
+      </section>
+
+      <!-- STATEMENT — Our Philosophy -->
+      <section class="h-panel h-panel--statement" data-nav-theme="light" id="studio" data-label="Philosophy">
+        <div class="statement__head">
+          <div class="polaroid-wrap" data-reveal="up">
+            <figure class="polaroid">
+              <img src="https://images.unsplash.com/photo-1684691376857-5dfb87f6bc65?auto=format&fit=crop&w=400&q=80" alt="Villa exterior by Elevate, Villa Noor, Emirates Hills" loading="lazy">
+              <figcaption>Villa Noor, on site</figcaption>
+            </figure>
+          </div>
+          <h2 class="statement__title" data-split-lines data-parallax="24">
+            <span class="line line--serif">Most studios say they listen.</span>
+            <span class="line line--serif">Judge us on what</span>
+            <span class="line line--serif"><span class="hand">we built.</span></span>
+          </h2>
+        </div>
+        <div class="statement__cols">
+          <p class="statement__lead" data-reveal="up">
+            Build it right the first time. Let the space do the talking.
+          </p>
+          <p class="statement__body" data-reveal="up">
+            Architecture and interiors, run as one process, not two
+            contracts. The proportion of a doorway, the grain of the stone
+            underfoot, the way afternoon light lands on a countertop —
+            decided on day one, together, because that's the only way a space
+            still holds together once the scaffolding comes down.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICES — What We Do. Titles only at rest; hovering a row
+           reveals its description + tags and swaps the floating cursor
+           photo (same mechanic as the Approach section). -->
+      <section class="h-panel h-panel--services" data-nav-theme="light" id="services" data-label="Service">
+        <div class="services__intro">
+          <h2 class="services__heading" data-split-lines>
+            <span class="line line--serif">What</span>
+            <span class="line line--serif"><span class="hand">We Do</span></span>
+          </h2>
+          <p data-reveal="up">Architecture and interior design, end to end —
+            from the first sketch to the last light fixture.</p>
+        </div>
+        <ol class="services__list">
+          <li class="service-row">
+            <div class="service-row__head">
+              <span class="service-row__num">01</span>
+              <h3 class="service-row__title">Residential Design</h3>
+            </div>
+            <div class="service-row__reveal"><div class="service-row__reveal-inner">
+              <p>Homes people don't want to leave. Villas, penthouses and
+                private residences designed room by room, material by
+                material, around how a household moves through its day —
+                not how the space looks in a single photograph.</p>
+              <span class="service-row__tags">Villas &amp; private residences · Apartments &amp; penthouses · Room-wise renovations</span>
+            </div></div>
+          </li>
+          <li class="service-row">
+            <div class="service-row__head">
+              <span class="service-row__num">02</span>
+              <h3 class="service-row__title">Commercial &amp; Workspace Design</h3>
+            </div>
+            <div class="service-row__reveal"><div class="service-row__reveal-inner">
+              <p>An office doesn't have to feel like one. Workspaces that
+                carry a brand's identity through to the door handles —
+                layout, acoustics and materials resolved together, so the
+                space performs as hard as the team inside it.</p>
+              <span class="service-row__tags">Corporate offices · Co-working spaces · Retail &amp; showrooms</span>
+            </div></div>
+          </li>
+          <li class="service-row">
+            <div class="service-row__head">
+              <span class="service-row__num">03</span>
+              <h3 class="service-row__title">Hospitality Design</h3>
+            </div>
+            <div class="service-row__reveal"><div class="service-row__reveal-inner">
+              <p>Restaurants, lounges and cafés built around the arc of an
+                evening. How a room feels at 7pm isn't how it should feel at
+                midnight — lighting, materials and layout are designed to
+                know the difference.</p>
+              <span class="service-row__tags">Restaurants &amp; cafés · Lounges &amp; bars · Boutique hospitality</span>
+            </div></div>
+          </li>
+          <li class="service-row">
+            <div class="service-row__head">
+              <span class="service-row__num">04</span>
+              <h3 class="service-row__title">Architectural Design &amp; Planning</h3>
+            </div>
+            <div class="service-row__reveal"><div class="service-row__reveal-inner">
+              <p>Site analysis, facade design, spatial planning and the
+                technical drawings that turn a concept into something a
+                contractor can actually build — coordinated end to end,
+                permits included.</p>
+              <span class="service-row__tags">Concept &amp; schematic design · Facade design · CAD drafting &amp; technical documentation</span>
+            </div></div>
+          </li>
+          <li class="service-row">
+            <div class="service-row__head">
+              <span class="service-row__num">05</span>
+              <h3 class="service-row__title">3D Visualisation &amp; Concept Development</h3>
+            </div>
+            <div class="service-row__reveal"><div class="service-row__reveal-inner">
+              <p>See the room before it exists. Photoreal renders and
+                material studies let you change your mind about the
+                countertop before it's poured, not after.</p>
+            </div></div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- SPLIT DARK DUO -->
+      <section class="h-panel h-panel--duo" data-nav-theme="dark" data-label="Craft">
+        <div class="duo__media">
+          <div class="media-wipe hover-zoom duo__media-back" data-wipe="right">
+            <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80" alt="Interior detail, travertine and white oak, Elevate">
+          </div>
+          <div class="media-wipe hover-zoom duo__media-front" data-wipe="left">
+            <img src="https://images.unsplash.com/photo-1622396481322-3b83d186701b?auto=format&fit=crop&w=1200&q=80" alt="Limestone and timber material detail, Elevate">
+          </div>
+        </div>
+        <div class="duo__text">
+          <h2 class="duo__title" data-split-lines>
+            <span class="line line--serif">Designed across</span>
+            <span class="line line--serif"><span class="hand">every scale.</span></span>
+          </h2>
+          <p data-reveal="up">
+            Residential. Commercial. Hospitality. The brief changes but the
+            materials and the standard don't. Travertine, white oak, brushed
+            brass, limewash plaster: a small palette, used with restraint,
+            every time.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECONDARY FULL BLEED -->
+      <section class="h-panel h-panel--bleed h-panel--bleed-warm" data-nav-theme="light" data-label="Craft">
+        <div class="media-wipe hover-zoom" data-wipe="up">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1800&q=80" alt="Living room interior design by Elevate, Residence 14, Palm Jumeirah">
+        </div>
+      </section>
+
+      <!-- APPROACH + STATS — one continuous blue section, two halves.
+           A small photo follows the cursor anywhere across BOTH halves —
+           sits behind the words (z-index below .values__stack / .stats__grid),
+           above the section background. See initApproachCursorImage in main.js.
+           #approachPreview lives on the OUTER panel (not either half) so its
+           position, computed from the outer panel's own live bounding rect,
+           tracks correctly across the whole blue area, not just one half. -->
+      <section class="h-panel h-panel--approach" data-nav-theme="light" data-label="Approach">
+        <div class="approach-preview" id="approachPreview" aria-hidden="true">
+          <img src="" alt="" id="approachPreviewImg">
+        </div>
+
+        <div class="h-panel--values">
+          <span class="eyebrow-script" aria-hidden="true">Considered</span>
+          <p class="values__intro" data-reveal="up">
+            Every space we design comes down to three decisions — how it's
+            laid out, how it feels, and how it's finished.
+          </p>
+          <ol class="values__stack" id="valuesList">
+            <li class="value-row" data-hover-img="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?auto=format&fit=crop&w=1000&q=80">
+              <span class="value-row__num">01</span>
+              <h3 class="value-row__word">Layout</h3>
+            </li>
+            <li class="value-row" data-hover-img="https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1000&q=80">
+              <span class="value-row__num">02</span>
+              <h3 class="value-row__word">Comfort</h3>
+            </li>
+            <li class="value-row" data-hover-img="https://images.unsplash.com/photo-1637412816281-f80ec9948fea?auto=format&fit=crop&w=1000&q=80">
+              <span class="value-row__num">03</span>
+              <h3 class="value-row__word">Detail</h3>
+            </li>
+          </ol>
+        </div>
+
+        <div class="h-panel--stats">
+          <span class="stats__eyebrow">Elevate, by the numbers</span>
+          <ul class="stats__grid" data-reveal="up">
+            <li class="stat"><span class="stat__num">8+</span><span class="stat__label">Years in practice</span></li>
+            <li class="stat"><span class="stat__num">60+</span><span class="stat__label">Projects completed</span></li>
+            <li class="stat"><span class="stat__num">35,000+</span><span class="stat__label">Sq. ft. of space delivered</span></li>
+            <li class="stat"><span class="stat__num">90%</span><span class="stat__label">Clients who came from a referral, not an ad</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTS — Selected Work -->
+      <section class="h-panel h-panel--projects" data-nav-theme="light" id="work" data-label="Work">
+        <div class="projects__intro">
+          <h2 data-split-lines data-parallax="30">
+            <span class="line line--serif">Selected</span>
+            <span class="line line--serif"><span class="hand">Work</span></span>
+          </h2>
+          <p data-reveal="up">Four projects, four different problems to solve.</p>
+        </div>
+
+        <div class="projects__track">
+          <article class="project-card project-card--sand">
+            <div class="project-card__img"><img src="https://images.unsplash.com/photo-1684691376857-5dfb87f6bc65?auto=format&fit=crop&w=1000&q=80" alt="Villa exterior design by Elevate, Villa Noor, Emirates Hills" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <h3>Villa Noor</h3>
+              <div class="project-card__reveal">
+                <div class="project-card__reveal-inner">
+                  <span class="project-card__meta">Emirates Hills, Dubai · Residential</span>
+                  <p class="project-card__desc">A 12,000 sq. ft. villa built around one instruction: let the garden in. Travertine, white oak and disappearing glass walls until inside and outside stop being a line.</p>
+                  <span class="project-card__link">View the project</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card project-card--grey">
+            <div class="project-card__img"><img src="https://images.unsplash.com/photo-1667312939978-64cf31718a6e?auto=format&fit=crop&w=1000&q=80" alt="Office reception design by Elevate, The Meridian Office, DIFC" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <h3>The Meridian Office</h3>
+              <div class="project-card__reveal">
+                <div class="project-card__reveal-inner">
+                  <span class="project-card__meta">DIFC, Dubai · Commercial</span>
+                  <p class="project-card__desc">A headquarters fit-out for a finance firm tired of feeling like one. Focus rooms, an open collaboration spine, and a reception with the presence of a private lounge.</p>
+                  <span class="project-card__link">View the project</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card project-card--blue">
+            <div class="project-card__img"><img src="https://images.unsplash.com/photo-1625585598750-3535fe40efb3?auto=format&fit=crop&w=1000&q=80" alt="Rooftop lounge design by Elevate, Aura Rooftop Lounge, Downtown Dubai" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <h3>Aura Rooftop Lounge</h3>
+              <div class="project-card__reveal">
+                <div class="project-card__reveal-inner">
+                  <span class="project-card__meta">Downtown Dubai · Hospitality</span>
+                  <p class="project-card__desc">A rooftop built to change moods without changing rooms. Layered lighting, textured plaster and a custom banquette shift arrival to dinner to last call.</p>
+                  <span class="project-card__link">View the project</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card project-card--sand">
+            <div class="project-card__img"><img src="https://images.unsplash.com/photo-1744819181935-edb1c6924d0b?auto=format&fit=crop&w=1000&q=80" alt="Living room interior design by Elevate, Residence 14, Palm Jumeirah" loading="lazy"></div>
+            <div class="project-card__overlay">
+              <h3>Residence 14</h3>
+              <div class="project-card__reveal">
+                <div class="project-card__reveal-inner">
+                  <span class="project-card__meta">Palm Jumeirah, Dubai · Residential</span>
+                  <p class="project-card__desc">A beachfront apartment renovated around light and storage, without losing an inch of sea view. Limewash, oak and brushed brass — lived-in, not staged.</p>
+                  <span class="project-card__link">View the project</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div><!-- /story__track -->
+  </div><!-- /story -->
+
+  <!-- ================= NORMAL VERTICAL SCROLL RESUMES =================
+       Horizontal scroll ends right after the projects showcase — it's the
+       most important part of the site, so it gets its own full-screen
+       "view all" beat as the landing point, then everything after runs
+       as an ordinary vertical page. -->
+
+  <!-- VIEW ALL PROJECTS — full-screen landing after the horizontal story -->
+  <section class="view-all" data-nav-theme="dark">
+    <div class="view-all__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=80" alt="" loading="lazy">
+    </div>
+    <div class="view-all__inner">
+      <h2 class="view-all__title" data-split-lines>
+        <span class="line line--serif">The full list</span>
+        <span class="line line--serif"><span class="hand">keeps growing.</span></span>
+      </h2>
+      <p data-reveal="up">Residential, commercial and hospitality — the full body of work, room by room.</p>
+      <a href="#" class="btn-rollover btn-magnetic" data-reveal="up"><span><span>View all projects</span><span>View all projects</span></span></a>
+    </div>
+  </section>
+
+  <!-- CLOSING STATEMENT -->
+  <section class="closing" data-nav-theme="light">
+    <div class="closing__media">
+      <div class="media-wipe" data-wipe="up">
+        <img src="assets/founder-sara.webp" alt="Illustration of Sara Al Mansoori, founder and principal architect of Elevate, at her desk with a laptop and architecture books" loading="lazy">
+      </div>
+    </div>
+    <div class="closing__text">
+      <h2 class="closing__title" data-split-lines>
+        <span class="line line--serif">Sara Al Mansoori,</span>
+        <span class="line line--serif closing__role">Founder &amp; Principal Architect</span>
+      </h2>
+      <blockquote class="closing__quote" data-reveal="up">
+        “I'd rather build one room someone remembers than ten they forget.”
+      </blockquote>
+      <p class="closing__bio" data-reveal="up">
+        Sara founded Elevate in 2018 after five years designing hospitality
+        interiors across the Gulf. She still visits every site herself before
+        a single wall goes up.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT — Start a Project -->
+  <section class="cta" data-nav-theme="light" id="contact">
+    <span class="eyebrow-script" aria-hidden="true">Let's talk</span>
+    <h2 class="cta__title" data-split-lines>
+      <span class="line line--serif">Start a</span>
+      <span class="line line--serif"><span class="hand">Project</span></span>
+    </h2>
+    <p class="cta__text" data-reveal="up">
+      Tell us what you're building. We reply within 1–2 business days — no autoresponder in between.
+    </p>
+
+    <form class="contact-form" id="contactForm" data-reveal="up">
+      <div class="contact-form__row">
+        <label class="contact-form__field">
+          <span>Full Name<span class="req">*</span></span>
+          <input type="text" name="name" required>
+        </label>
+        <label class="contact-form__field">
+          <span>Email Address<span class="req">*</span></span>
+          <input type="email" name="email" required>
+        </label>
+      </div>
+      <div class="contact-form__row">
+        <label class="contact-form__field">
+          <span>Phone Number</span>
+          <input type="tel" name="phone">
+        </label>
+        <label class="contact-form__field">
+          <span>Project Location</span>
+          <input type="text" name="location">
+        </label>
+      </div>
+      <div class="contact-form__row">
+        <label class="contact-form__field">
+          <span>Project Type</span>
+          <select name="projectType">
+            <option value="">Select one</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Hospitality</option>
+            <option>Architectural Planning</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label class="contact-form__field">
+          <span>Estimated Budget</span>
+          <select name="budget">
+            <option value="">Select one</option>
+            <option>Under AED 200k</option>
+            <option>AED 200k–500k</option>
+            <option>AED 500k–1M</option>
+            <option>AED 1M+</option>
+          </select>
+        </label>
+      </div>
+      <label class="contact-form__field contact-form__field--full">
+        <span>Tell us about your project</span>
+        <textarea name="message" rows="4"></textarea>
+      </label>
+      <button type="submit" class="btn-rollover btn-magnetic contact-form__submit">
+        <span><span>Send Enquiry</span><span>Send Enquiry</span></span>
+      </button>
+      <p class="contact-form__success" id="contactSuccess" role="status">Thank you — a real person will reply within 1–2 business days.</p>
+    </form>
+
+    <p class="cta__micro">
+      Prefer to talk it through? Email us at
+      <a href="mailto:hello@elevatestudio.ae" class="link-underline">hello@elevatestudio.ae</a>
+      or call +971 4 XXX XXXX.
+    </p>
+    <p class="cta__trust">Based in Dubai · Working across the UAE</p>
+  </section>
+</main>
+
+<footer class="footer" data-nav-theme="dark">
+  <div class="footer__main">
+    <div class="footer__brand">
+      <a href="#top" class="footer__logo" aria-label="Elevate — back to top"><img src="assets/elevate-logo.png" alt="Elevate" width="1200" height="254"></a>
+      <p class="footer__tagline">Architecture &amp; interior design studio, Dubai. Homes, offices and hospitality spaces people actually want to be in.</p>
+      <a href="#contact" class="footer__cta link-underline">Start a Project</a>
+    </div>
+
+    <nav class="footer__col" aria-label="Footer navigation">
+      <h3 class="footer__heading">Explore</h3>
+      <ul>
+        <li><a href="#studio">Philosophy</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Selected Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Services</h3>
+      <ul>
+        <li><a href="#services">Residential Design</a></li>
+        <li><a href="#services">Commercial &amp; Workspace</a></li>
+        <li><a href="#services">Hospitality Design</a></li>
+        <li><a href="#services">Architecture &amp; Planning</a></li>
+        <li><a href="#services">3D Visualisation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Get in touch</h3>
+      <ul>
+        <li><a href="mailto:hello@elevatestudio.ae">hello@elevatestudio.ae</a></li>
+        <li><a href="tel:+97140000000">+971 4 XXX XXXX</a></li>
+        <li>Dubai, United Arab Emirates</li>
+      </ul>
+      <ul class="footer__social-list">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span class="footer__copyright">© 2026 Elevate. All rights reserved.</span>
+    <ul class="footer__legal">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Cookie Policy</a></li>
+      <li><a href="#">Legal Notice</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js?v=8"></script>
+</body>
+</html>
