@@ -498,11 +498,16 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 .project-card--grey { background: var(--c-grey); }
 .project-card--blue { background: var(--c-blue); }
 .project-card__img { position: absolute; inset: 0; width: 100%; height: 100%; }
-/* tablet + mobile: the photo is absolutely positioned, so the card needs its own height */
+/* tablet + mobile: tall vertical rectangles in a sideways-scrolling strip,
+   project name only (no description); the photo is absolutely positioned,
+   so the card needs its own shape */
 @media (max-width: 950px) {
-  .project-card { flex: 0 0 min(78vw, 440px); aspect-ratio: 4 / 5; margin-right: 2px; }
-  /* all text is always shown here, so the scrim starts higher up */
-  .project-card__img::after { background: linear-gradient(to bottom, rgba(0,0,0,0) 15%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.88) 100%); }
+  .projects__track { gap: 8px; padding-bottom: 28px; }
+  .project-card { flex: 0 0 min(44vw, 250px); aspect-ratio: 3 / 5; margin-right: 0; }
+  .project-card .project-card__reveal { display: none; }
+  .project-card .project-card__img::after { background: linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.7) 100%); }
+  .project-card .project-card__overlay { left: 14px; right: 14px; bottom: 16px; }
+  .project-card .project-card__overlay h3 { white-space: normal; overflow: visible; font-size: 1.05rem; }
 }
 .project-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease-in-out, filter 0.45s ease-in-out; }
 .project-card__img::after {
@@ -555,7 +560,8 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 .view-all__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 28px; max-width: 44ch; }
 .view-all__title { font-size: clamp(2.4rem, 9vw, 4.6rem); line-height: 1.02; }
 .view-all__inner p { font-size: 1.05rem; line-height: 1.5; color: rgba(255, 255, 255, 0.75); }
-.view-all .btn-rollover { background: var(--c-clay); border-color: var(--c-clay); color: var(--c-white); }
+/* primary CTAs are black on light backgrounds and white on dark ones */
+.view-all .btn-rollover { background: var(--c-white); border-color: var(--c-white); color: var(--c-black); }
 
 /* ---------- closing statement — normal vertical flow, same as the
    sections around it (no longer part of the pinned horizontal story) ---------- */
@@ -606,7 +612,7 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
 .contact-form__field select:focus,
 .contact-form__field textarea:focus { outline: none; border-color: var(--c-ink); }
 .contact-form__field textarea { resize: vertical; min-height: 90px; }
-.contact-form__submit { align-self: flex-start; margin-top: 6px; background: var(--c-clay); border-color: var(--c-clay); color: var(--c-white); }
+.contact-form__submit { align-self: flex-start; margin-top: 6px; background: var(--c-ink); border-color: var(--c-ink); color: var(--c-white); }
 .contact-form__success {
   display: none; font-size: 0.9rem; color: var(--c-accent); margin: 0;
 }
@@ -635,8 +641,9 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   transition: transform 0.4s var(--ease-out);
 }
 .btn-magnetic.is-hover { color: var(--c-white); transition: color 0.15s linear 0.15s; }
-.view-all .btn-magnetic::before { background: var(--c-white); }
+.view-all .btn-magnetic::before { background: #e4e4e4; }
 .view-all .btn-magnetic.is-hover { color: var(--c-black); }
+.contact-form__submit.btn-magnetic::before { background: #2b2b2b; }
 
 /* ---------- footer ---------- */
 .footer { position: relative; z-index: 420; background: var(--c-black); color: rgba(255,255,255,0.72); padding: 64px var(--gutter) 28px; display: flex; flex-direction: column; gap: 56px; }
